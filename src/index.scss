@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: Inter;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e7f6ff;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width: 1080px;
+  margin: 50px auto;
+}
+
+// ---------------------------------
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px;
+  align-items: center;
+  border-bottom: 1px solid #dcdcdc;
+
+
+  a {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  p {
+    color: #9D9D9D;
+  }
+
+  .headerLeft {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 15px;
+    }
+  }
+
+  .headerRight {
+    display: flex;
+    align-items: center;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      span {
+        padding-left: 10px;
+        color: #5C5C5C;
+        font-weight: 600;
+      }
+
+    }
+
+    li:not(:last-child) {
+      padding-right: 30px;
+    }
+  }
+}
+
+// ----------------------------Content
+.content {
+  padding: 40px 60px 40px 60px;
+
+  .content__header {
+    display: flex;
+    justify-content: space-between;
+
+    .int {
+      border: 1px solid #F3F3F3;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 121%;
+    }
+  }
+}
+
+.content__cards {
+  display: flex;
+  padding: 0 60px;
+}
+
+.card {
+  align-items: center;
+  border: 1px solid #F3F3F3;
+  border-radius: 40px;
+  padding: 30px;
+  width: 220px;
+  margin: 15px;
+
+  img {
+    padding-bottom: 10px;
+  }
+
+  h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 10px;
+  }
+
+  .card__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .cost {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        text-transform: uppercase;
+
+      }
+
+      b {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+      }
+    }
+
+    button {
+      background: #FFFFFF;
+      border: 1px solid #F2F2F2;
+      border-radius: 8px;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+    }
+  }
+}
